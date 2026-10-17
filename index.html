@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreelanceHub - Hire Expert Freelancers</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- 1. Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand text-gradient fw-bold fs-3" href="#">FreelanceHub</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-light fs-4 hamburger-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#freelancers">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gigs">Find Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                </ul>
+                <div class="d-flex gap-3 mt-3 mt-lg-0 align-items-center">
+                    <a href="#" class="nav-link px-3">Login</a>
+                    <a href="#" class="btn btn-gradient rounded-pill px-4">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center pt-5 mt-5">
+                <div class="col-lg-6 hero-text slide-up">
+                    <div class="badge rounded-pill glass-card px-3 py-2 mb-4 d-inline-block border-secondary text-light">
+                        <i class="fa-solid fa-bolt text-warning me-2"></i> No.1 Freelance Platform
+                    </div>
+                    <h1 class="display-3 fw-bolder mb-4 lh-sm">Hire Expert <span class="text-gradient">Freelancers</span> or Offer Your Services</h1>
+                    <p class="lead mb-5 text-secondary pe-lg-5">Join the world's most premium marketplace for top-tier creative and technical talent. Connect, collaborate, and create.</p>
+                    
+                    <div class="search-box glass-card p-2 rounded-pill d-flex align-items-center mb-5 flex-wrap flex-md-nowrap gap-2">
+                        <select class="form-select border-0 bg-transparent text-light w-auto d-none d-md-block shadow-none">
+                            <option>All Categories</option>
+                            <option>Web Design</option>
+                            <option>Development</option>
+                            <option>Marketing</option>
+                        </select>
+                        <div class="vr d-none d-md-block bg-secondary mx-2"></div>
+                        <input type="text" class="form-control border-0 bg-transparent text-light shadow-none" placeholder="What service are you looking for?">
+                        <button class="btn btn-gradient rounded-pill px-4 py-2 w-100 w-md-auto"><i class="fa-solid fa-search me-2"></i>Search</button>
+                    </div>
+                    <div class="d-flex gap-4 gap-md-5 stats-container">
+                        <div>
+                            <h2 class="fw-bold m-0 stat-counter" data-target="15000">0</h2>
+                            <span class="text-secondary small text-uppercase letter-spacing-1">Active Freelancers</span>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold m-0 stat-counter" data-target="32500">0</h2>
+                            <span class="text-secondary small text-uppercase letter-spacing-1">Jobs Posted</span>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold m-0 stat-counter" data-target="99">0</h2>
+                            <span class="text-secondary small text-uppercase letter-spacing-1">Satisfaction (%)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center fade-in mt-5 mt-lg-0">
+                    <div class="hero-image-wrapper position-relative">
+                        <!-- Glassmorphism Dashboard Mockup -->
+                        <div class="mockup-container glass-card p-4 rounded-4 text-start position-relative shadow-lg border border-secondary border-opacity-25">
+                            <div class="mockup-header d-flex justify-content-between align-items-center mb-4 border-bottom pb-3 border-secondary border-opacity-50">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=8a2be2&color=fff" class="rounded-circle" width="40" alt="Avatar">
+                                    <div>
+                                        <div class="fw-bold lh-1">Jane Doe</div>
+                                        <small class="text-secondary">Pro Seller</small>
+                                    </div>
+                                </div>
+                                <div class="badge bg-success bg-opacity-25 text-success rounded-pill px-3 py-2">Available</div>
+                            </div>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-6">
+                                    <div class="bg-dark bg-opacity-50 p-3 rounded-4 border border-secondary border-opacity-25 h-100">
+                            <i class="fa-solid fa-wallet text-purple mb-2 fs-4"></i>
+                                        <div class="small text-secondary mb-1">Monthly Earnings</div>
+                                        <div class="fw-bold fs-4">$4,250.00</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-dark bg-opacity-50 p-3 rounded-4 border border-secondary border-opacity-25 h-100">
+                                        <i class="fa-solid fa-briefcase text-blue mb-2 fs-4"></i>
+                                        <div class="small text-secondary mb-1">Active Orders</div>
+                                        <div class="fw-bold fs-4">12</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark bg-opacity-50 p-3 rounded-4 border border-secondary border-opacity-25 mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="small text-secondary">Job Success Score</span>
+                                    <span class="small fw-bold text-gradient">98%</span>
+                                </div>
+                                <div class="progress bg-dark" style="height: 8px;">
+                                    <div class="progress-bar bg-gradient rounded-pill w-100" style="width: 98% !important;"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-gradient w-100 rounded-pill py-2">Withdraw Funds</button>
+                        </div>
+                        
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-1 glass-card p-3 rounded-4 d-flex align-items-center gap-3 position-absolute">
+                            <div class="bg-success rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="fa-solid fa-check text-light"></i>
+                            </div>
+                            <div class="text-start">
+                                <div class="fw-bold">Project Done</div>
+                                <small class="text-secondary">Just now</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3. Popular Categories -->
+    <section id="categories" class="py-6 section-bg position-relative">
+        <div class="container">
+            <div class="text-center mb-5 slide-up">
+                <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Browse by skill</span>
+                <h2 class="display-5 fw-bold mt-2">Popular <span class="text-gradient">Categories</span></h2>
+                <p class="text-secondary mx-auto" style="max-width: 600px;">Explore thousands of skilled professionals across various domains to bring your project to life.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Web Dev -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.1s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-code text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">Web Dev</h5>
+                            <p class="text-secondary small mb-0">1,200+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- UI/UX -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.2s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-pen-nib text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">UI/UX Design</h5>
+                            <p class="text-secondary small mb-0">850+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Marketing -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.3s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-bullhorn text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">Marketing</h5>
+                            <p class="text-secondary small mb-0">940+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Video Editing -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.4s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-video text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">Video Editing</h5>
+                            <p class="text-secondary small mb-0">600+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Graphic Design -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.5s;">
+                    <a href="#" class="text-decoration-none">
+                          <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-palette text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">Graphic Design</h5>
+                            <p class="text-secondary small mb-0">1,500+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- App Dev -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.6s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-mobile-screen text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">App Dev</h5>
+                            <p class="text-secondary small mb-0">450+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Content Writing -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.7s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-keyboard text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">Writing</h5>
+                            <p class="text-secondary small mb-0">2,100+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- SEO -->
+                <div class="col-6 col-md-4 col-lg-3 fade-in" style="transition-delay: 0.8s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="category-card glass-card text-center p-4 rounded-4 hover-lift h-100">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="fa-solid fa-magnifying-glass-chart text-gradient fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold text-light">SEO</h5>
+                            <p class="text-secondary small mb-0">300+ Skills</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Featured Freelancers -->
+    <section id="freelancers" class="py-6">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 slide-up">
+                <div class="mb-3 mb-md-0">
+                    <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Top Talent</span>
+                    <h2 class="display-5 fw-bold mt-2">Featured <span class="text-gradient">Freelancers</span></h2>
+                    <p class="text-secondary mb-0">Work with the best talent on our platform.</p>
+                </div>
+                <a href="#" class="btn btn-outline-light rounded-pill px-4">View All Freelancers</a>
+            </div>
+            <div class="row g-4">
+                <!-- Freelancer 1 -->
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="freelancer-card glass-card rounded-4 overflow-hidden position-relative">
+                        <div class="card-bg-gradient"></div>
+                        <div class="p-4 text-center position-relative z-index-1">
+                            <div class="position-relative d-inline-block mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Alex+Doe&background=random&size=100" class="rounded-circle border border-3 border-dark profile-img" alt="Profile">
+                                <span class="position-absolute bottom-0 end-0 p-2 bg-success border border-light rounded-circle"></span>
+                            </div>
+                            <h5 class="fw-bold mb-1">Alex Doe</h5>
+                            <p class="text-gradient small fw-bold mb-3">Full Stack Developer</p>
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-light fw-bold">4.9</span>
+                                <span class="text-secondary small">(120 reviews)</span>
+                            </div>
+                            <div class="skills-badges d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge bg-dark border border-secondary text-secondary">React</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">Node.js</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                <span class="fw-bold fs-5">$45<span class="text-secondary fs-6 fw-normal">/hr</span></span>
+                                <button class="btn btn-sm btn-gradient rounded-pill px-3">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Freelancer 2 -->
+                <div class="col-md-6 col-lg-3 fade-in" style="transition-delay: 0.1s;">
+                    <div class="freelancer-card glass-card rounded-4 overflow-hidden position-relative">
+                        <div class="card-bg-gradient"></div>
+                        <div class="p-4 text-center position-relative z-index-1">
+                            <div class="position-relative d-inline-block mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Smith&background=random&size=100" class="rounded-circle border border-3 border-dark profile-img" alt="Profile">
+                                <span class="position-absolute bottom-0 end-0 p-2 bg-success border border-light rounded-circle"></span>
+                            </div>
+                            <h5 class="fw-bold mb-1">Sarah Smith</h5>
+                            <p class="text-gradient small fw-bold mb-3">UI/UX Designer</p>
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-light fw-bold">5.0</span>
+                                <span class="text-secondary small">(85 reviews)</span>
+                            </div>
+                            <div class="skills-badges d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge bg-dark border border-secondary text-secondary">Figma</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">Wireframing</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                <span class="fw-bold fs-5">$60<span class="text-secondary fs-6 fw-normal">/hr</span></span>
+                                <button class="btn btn-sm btn-gradient rounded-pill px-3">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Freelancer 3 -->
+                <div class="col-md-6 col-lg-3 fade-in" style="transition-delay: 0.2s;">
+                    <div class="freelancer-card glass-card rounded-4 overflow-hidden position-relative">
+                        <div class="card-bg-gradient"></div>
+                        <div class="p-4 text-center position-relative z-index-1">
+                            <div class="position-relative d-inline-block mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Mike+Johnson&background=random&size=100" class="rounded-circle border border-3 border-dark profile-img" alt="Profile">
+                                <span class="position-absolute bottom-0 end-0 p-2 bg-secondary border border-light rounded-circle"></span>
+                            </div>
+                            <h5 class="fw-bold mb-1">Mike Johnson</h5>
+                            <p class="text-gradient small fw-bold mb-3">SEO Specialist</p>
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-light fw-bold">4.8</span>
+                                <span class="text-secondary small">(210 reviews)</span>
+                            </div>
+                            <div class="skills-badges d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge bg-dark border border-secondary text-secondary">Analytics</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">Audits</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                <span class="fw-bold fs-5">$35<span class="text-secondary fs-6 fw-normal">/hr</span></span>
+                                 <button class="btn btn-sm btn-gradient rounded-pill px-3">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Freelancer 4 -->
+                <div class="col-md-6 col-lg-3 fade-in" style="transition-delay: 0.3s;">
+                    <div class="freelancer-card glass-card rounded-4 overflow-hidden position-relative">
+                        <div class="card-bg-gradient"></div>
+                        <div class="p-4 text-center position-relative z-index-1">
+                            <div class="position-relative d-inline-block mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Emma+Wilson&background=random&size=100" class="rounded-circle border border-3 border-dark profile-img" alt="Profile">
+                                <span class="position-absolute bottom-0 end-0 p-2 bg-success border border-light rounded-circle"></span>
+                            </div>
+                            <h5 class="fw-bold mb-1">Emma Wilson</h5>
+                            <p class="text-gradient small fw-bold mb-3">Content Writer</p>
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-light fw-bold">4.9</span>
+                                <span class="text-secondary small">(150 reviews)</span>
+                            </div>
+                            <div class="skills-badges d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge bg-dark border border-secondary text-secondary">Copywriting</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">Blogs</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                <span class="fw-bold fs-5">$25<span class="text-secondary fs-6 fw-normal">/hr</span></span>
+                                <button class="btn btn-sm btn-gradient rounded-pill px-3">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+    <!-- 5. Popular Services/Gigs Section -->
+    <section id="gigs" class="py-6 section-bg">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 slide-up">
+                <div class="mb-3 mb-md-0">
+                    <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Ready to Order</span>
+                    <h2 class="display-5 fw-bold mt-2">Popular <span class="text-gradient">Services</span></h2>
+                    <p class="text-secondary mb-0">Get your project done instantly with these ready-made services.</p>
+                </div>
+                <a href="#" class="btn btn-outline-light rounded-pill px-4">Browse All Services</a>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Gig 1 -->
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="gig-card glass-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+                        <div class="gig-img-wrapper position-relative overflow-hidden" style="height: 200px;">
+                            <div class="bg-gradient w-100 h-100 d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-react fs-1 text-light opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Alex+Doe&size=30" class="rounded-circle" alt="Avatar">
+                                <span class="fw-bold small">Alex Doe</span>
+                                <span class="badge bg-dark border border-secondary ms-auto text-warning"><i class="fa-solid fa-star me-1"></i>4.9</span>
+                            </div>
+                            <h5 class="fw-bold mb-3 gig-title">I will build a modern React JS web application for your business</h5>
+                            <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div class="text-secondary small">Starting at <span class="fw-bold text-light fs-5 ms-1">$150</span></div>
+                                <button class="btn btn-sm btn-outline-light rounded-pill"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gig 2 -->
+                <div class="col-md-6 col-lg-4 fade-in" style="transition-delay: 0.1s;">
+                    <div class="gig-card glass-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+                        <div class="gig-img-wrapper position-relative overflow-hidden" style="height: 200px;">
+                            <div class="bg-primary w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, #1e3c72, #2a5298) !important;">
+                                <i class="fa-brands fa-figma fs-1 text-light opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Smith&size=30" class="rounded-circle" alt="Avatar">
+                                <span class="fw-bold small">Sarah Smith</span>
+                                <span class="badge bg-dark border border-secondary ms-auto text-warning"><i class="fa-solid fa-star me-1"></i>5.0</span>
+                            </div>
+                            <h5 class="fw-bold mb-3 gig-title">I will design a modern UI/UX for your mobile app in Figma</h5>
+                            <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div class="text-secondary small">Starting at <span class="fw-bold text-light fs-5 ms-1">$200</span></div>
+                                <button class="btn btn-sm btn-outline-light rounded-pill"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gig 3 -->
+                <div class="col-md-6 col-lg-4 fade-in" style="transition-delay: 0.2s;">
+                    <div class="gig-card glass-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+                        <div class="gig-img-wrapper position-relative overflow-hidden" style="height: 200px;">
+                            <div class="bg-success w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, #11998e, #38ef7d) !important;">
+                                <i class="fa-solid fa-pen-nib fs-1 text-light opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Emma+Wilson&size=30" class="rounded-circle" alt="Avatar">
+                                <span class="fw-bold small">Emma Wilson</span>
+                                <span class="badge bg-dark border border-secondary ms-auto text-warning"><i class="fa-solid fa-star me-1"></i>4.9</span>
+                            </div>
+                            <h5 class="fw-bold mb-3 gig-title">I will write SEO optimized tech blog posts and articles</h5>
+                            <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div class="text-secondary small">Starting at <span class="fw-bold text-light fs-5 ms-1">$50</span></div>
+                                <button class="btn btn-sm btn-outline-light rounded-pill"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. How It Works Section -->
+    <section id="how-it-works" class="py-6 position-relative overflow-hidden">
+        <div class="blob shape-3"></div>
+        <div class="container position-relative z-index-1">
+            <div class="text-center mb-5 slide-up">
+                <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Simple Process</span>
+                <h2 class="display-5 fw-bold mt-2">How It <span class="text-gradient">Works</span></h2>
+                <p class="text-secondary mx-auto" style="max-width: 600px;">Connecting freelancers with clients has never been this easy. Just follow these simple steps.</p>
+            </div>
+            
+            <div class="row position-relative mt-5 pt-4">
+                <div class="timeline-line d-none d-lg-block position-absolute top-50 start-0 w-100 border-top border-secondary border-dashed" style="z-index: -1;"></div>
+                
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0 fade-in">
+                    <div class="step-icon glass-card rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative" style="width: 100px; height: 100px;">
+                        <i class="fa-solid fa-user-plus fs-2 text-gradient"></i>
+                        <span class="position-absolute top-0 end-0 bg-gradient rounded-circle d-flex align-items-center justify-content-center text-light fw-bold" style="width: 30px; height: 30px; transform: translate(25%, -25%);">1</span>
+                    </div>
+                    <h5 class="fw-bold">Sign Up</h5>
+                    <p class="text-secondary small">Create your free account as a client or freelancer in seconds.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0 fade-in" style="transition-delay: 0.1s;">
+                    <div class="step-icon glass-card rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative" style="width: 100px; height: 100px;">
+                        <i class="fa-solid fa-magnifying-glass fs-2 text-gradient"></i>
+                        <span class="position-absolute top-0 end-0 bg-gradient rounded-circle d-flex align-items-center justify-content-center text-light fw-bold" style="width: 30px; height: 30px; transform: translate(25%, -25%);">2</span>
+                    </div>
+                    <h5 class="fw-bold">Post Job or Find Gig</h5>
+                    <p class="text-secondary small">Post your project requirements or browse available services.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0 fade-in" style="transition-delay: 0.2s;">
+                    <div class="step-icon glass-card rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative" style="width: 100px; height: 100px;">
+                        <i class="fa-solid fa-handshake fs-2 text-gradient"></i>
+                        <span class="position-absolute top-0 end-0 bg-gradient rounded-circle d-flex align-items-center justify-content-center text-light fw-bold" style="width: 30px; height: 30px; transform: translate(25%, -25%);">3</span>
+                    </div>
+                    <h5 class="fw-bold">Connect & Collaborate</h5>
+                    <p class="text-secondary small">Chat directly, share files, and work together on the platform.</p>
+                </div>
+                                
+                <!-- Step 4 -->
+                <div class="col-lg-3 col-md-6 text-center fade-in" style="transition-delay: 0.3s;">
+                    <div class="step-icon glass-card rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 position-relative" style="width: 100px; height: 100px;">
+                        <i class="fa-solid fa-shield-halved fs-2 text-gradient"></i>
+                        <span class="position-absolute top-0 end-0 bg-gradient rounded-circle d-flex align-items-center justify-content-center text-light fw-bold" style="width: 30px; height: 30px; transform: translate(25%, -25%);">4</span>
+                    </div>
+                    <h5 class="fw-bold">Secure Payment</h5>
+                    <p class="text-secondary small">Pay securely through our milestone-based escrow system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Client Testimonials Section -->
+    <section id="testimonials" class="py-6 section-bg">
+        <div class="container">
+            <div class="text-center mb-5 slide-up">
+                <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Reviews</span>
+                <h2 class="display-5 fw-bold mt-2">What Clients <span class="text-gradient">Say</span></h2>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide fade-in" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Review 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="glass-card p-5 rounded-4 text-center position-relative">
+                                    <i class="fa-solid fa-quote-left fs-1 text-purple opacity-25 position-absolute top-0 start-0 m-4"></i>
+                                    <div class="text-warning mb-3">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="fs-4 fst-italic mb-4">"I found an amazing developer for my startup. The process was seamless, and the quality of work exceeded my expectations. FreelanceHub is now my go-to platform."</p>
+                                    <img src="https://ui-avatars.com/api/?name=David+M&size=60" class="rounded-circle mb-3 border border-2 border-secondary" alt="Client">
+                                    <h5 class="fw-bold mb-0">David M.</h5>
+                                    <p class="text-secondary small">Startup Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="glass-card p-5 rounded-4 text-center position-relative">
+                                    <i class="fa-solid fa-quote-left fs-1 text-purple opacity-25 position-absolute top-0 start-0 m-4"></i>
+                                    <div class="text-warning mb-3">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="fs-4 fst-italic mb-4">"As a freelancer, this platform has given me access to premium clients worldwide. The secure payment system gives me peace of mind."</p>
+                                    <img src="https://ui-avatars.com/api/?name=Lisa+R&size=60" class="rounded-circle mb-3 border border-2 border-secondary" alt="Client">
+                                    <h5 class="fw-bold mb-0">Lisa R.</h5>
+                                    <p class="text-secondary small">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="glass-card p-3 rounded-circle d-flex align-items-center justify-content-center" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-left text-light"></i>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="glass-card p-3 rounded-circle d-flex align-items-center justify-content-center" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-right text-light"></i>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 8. Pricing Plans Section -->
+    <section id="pricing" class="py-6">
+        <div class="container">
+            <div class="text-center mb-5 slide-up">
+                <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Membership</span>
+                <h2 class="display-5 fw-bold mt-2">Platform <span class="text-gradient">Pricing</span></h2>
+                <p class="text-secondary mx-auto" style="max-width: 600px;">Choose a plan that fits your needs. No hidden fees.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Basic -->
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="pricing-card glass-card rounded-4 p-5 text-center h-100">
+                        <h4 class="fw-bold mb-2">Basic</h4>
+                        <p class="text-secondary small mb-4">Perfect for getting started</p>
+                        <div class="mb-4">
+                            <span class="fs-1 fw-bold">$0</span><span class="text-secondary">/mo</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Browse all categories</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Post up to 3 jobs/month</li>
+                            <li class="mb-3 text-secondary"><i class="fa-solid fa-xmark me-2 opacity-50"></i> Featured listings</li>
+                            <li class="mb-3 text-secondary"><i class="fa-solid fa-xmark me-2 opacity-50"></i> Dedicated support</li>
+                        </ul>
+                        <button class="btn btn-outline-light w-100 rounded-pill py-2 mt-auto">Get Started</button>
+                    </div>
+                </div>
+                
+                <!-- Pro -->
+                <div class="col-md-6 col-lg-4 fade-in" style="transition-delay: 0.1s;">
+                    <div class="pricing-card glass-card rounded-4 p-5 text-center h-100 border-purple position-relative transform-scale">
+                        <div class="position-absolute top-0 start-50 translate-middle badge bg-gradient rounded-pill px-3 py-2">Most Popular</div>
+                        <h4 class="fw-bold mb-2 text-gradient">Pro</h4>
+                        <p class="text-secondary small mb-4">For active professionals</p>
+                        <div class="mb-4">
+                            <span class="fs-1 fw-bold">$29</span><span class="text-secondary">/mo</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Everything in Basic</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Unlimited job posts</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Lower transaction fees (5%)</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Featured profile</li>
+                        </ul>
+                        <button class="btn btn-gradient w-100 rounded-pill py-2 mt-auto">Upgrade to Pro</button>
+                    </div>
+                </div>
+                
+                <!-- Premium -->
+                <div class="col-md-6 col-lg-4 fade-in" style="transition-delay: 0.2s;">
+                    <div class="pricing-card glass-card rounded-4 p-5 text-center h-100">
+                        <h4 class="fw-bold mb-2">Premium</h4>
+                        <p class="text-secondary small mb-4">For large agencies</p>
+                        <div class="mb-4">
+                            <span class="fs-1 fw-bold">$99</span><span class="text-secondary">/mo</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Everything in Pro</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> 0% transaction fees</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> Agency tools & reports</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i> 24/7 Priority support</li>
+                        </ul>
+                        <button class="btn btn-outline-light w-100 rounded-pill py-2 mt-auto">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 9. FAQ Section -->
+    <section id="faq" class="py-6 section-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 slide-up">
+                    <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Support</span>
+                    <h2 class="display-5 fw-bold mt-2 mb-4">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                    <p class="text-secondary mb-4">Can't find the answer you're looking for? Feel free to reach out to our customer support team.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4">Contact Support</button>
+                </div>
+                <div class="col-lg-7 fade-in">
+                    <div class="accordion custom-accordion" id="faqAccordion">
+                        <div class="accordion-item glass-card mb-3 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-light shadow-none fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How do I hire a freelancer?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary pt-0 px-4 pb-4">
+                                    Simply browse through our categories, find a freelancer whose skills match your needs, and click "Order" or send them a message directly to discuss your project requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-light shadow-none fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Is my payment secure?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary pt-0 px-4 pb-4">
+                                    Yes, we use a milestone-based escrow system. Your funds are held securely until the freelancer delivers the work and you approve it.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-light shadow-none fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How much does it cost to join?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary pt-0 px-4 pb-4">
+                                    Joining FreelanceHub is completely free for both clients and freelancers. We only charge a small service fee on completed transactions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 10. Contact Section -->
+    <section id="contact" class="py-6 position-relative">
+        <div class="blob shape-2" style="bottom: 0; top: auto; right: 0;"></div>
+        <div class="container position-relative z-index-1">
+            <div class="text-center mb-5 slide-up">
+                <span class="text-gradient fw-bold text-uppercase letter-spacing-1">Get in touch</span>
+                <h2 class="display-5 fw-bold mt-2">Contact <span class="text-gradient">Us</span></h2>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5 fade-in">
+                    <div class="glass-card p-5 rounded-4 h-100">
+                        <h4 class="fw-bold mb-4">Contact Information</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-circle bg-purple-light me-3" style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-location-dot text-gradient"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Address</h6>
+                                <p class="text-secondary small mb-0">123 Innovation Drive, Tech City, TC 10023</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-circle bg-blue-light me-3" style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-phone text-gradient"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Phone</h6>
+                                <p class="text-secondary small mb-0">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="icon-circle bg-purple-light me-3" style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-envelope text-gradient"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Email</h6>
+                                <p class="text-secondary small mb-0">support@freelancehub.com</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Map placeholder -->
+                        <div class="rounded-3 overflow-hidden" style="height: 150px; background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80') center/cover;">
+                            <div class="w-100 h-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center backdrop-blur">
+                                <i class="fa-solid fa-map-location-dot fs-1 text-light opacity-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 fade-in" style="transition-delay: 0.2s;">
+                    <div class="glass-card p-5 rounded-4 h-100">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">Your Name</label>
+                                    <input type="text" class="form-control custom-input" placeholder="John Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">Email Address</label>
+                                    <input type="email" class="form-control custom-input" placeholder="john@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">Subject</label>
+                                    <input type="text" class="form-control custom-input" placeholder="How can we help?">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">Message</label>
+                                    <textarea class="form-control custom-input" rows="5" placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-gradient rounded-pill px-5 py-2 w-100">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 11. Footer -->
+    <footer class="footer-bg pt-6 pb-4 border-top border-secondary border-opacity-25 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand text-gradient fw-bold fs-3 mb-3 d-block" href="#">FreelanceHub</a>
+                    <p class="text-secondary small pe-lg-4">Connecting visionary clients with world-class freelance talent. Your next big project starts right here.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon text-light glass-card rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon text-light glass-card rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon text-light glass-card rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon text-light glass-card rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-4 text-light">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#how-it-works">How it Works</a></li>
+                        <li class="mb-2"><a href="#pricing">Pricing</a></li>
+                        <li class="mb-2"><a href="#faq">FAQ</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-4 text-light">Categories</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#">Web Development</a></li>
+                        <li class="mb-2"><a href="#">UI/UX Design</a></li>
+                        <li class="mb-2"><a href="#">Digital Marketing</a></li>
+                        <li class="mb-2"><a href="#">Video Editing</a></li>
+                        <li class="mb-2"><a href="#">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-4 text-light">Newsletter</h6>
+                    <p class="text-secondary small mb-3">Subscribe to get the latest job alerts and platform updates.</p>
+                    <div class="input-group glass-card rounded-pill p-1">
+                        <input type="email" class="form-control border-0 bg-transparent text-light shadow-none ps-3" placeholder="Enter your email">
+                        <button class="btn btn-gradient rounded-pill px-4" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 border-top border-secondary border-opacity-25">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary small mb-0">&copy; 2026 FreelanceHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-secondary small text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
